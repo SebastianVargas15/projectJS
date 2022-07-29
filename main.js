@@ -1,6 +1,6 @@
-let nombre = prompt("Elija el nombre de esta pagina web");
-let titulo = prompt("Elija el titulo de esta pagina web");
-let parraph = prompt("Parrafo principal de esta pagina web");
+let nombre = prompt("Elija el nombre de esta pagina web (Default cancelar)");
+let titulo = prompt("Elija el titulo de esta pagina web (Default cancelar)");
+let parraph = prompt("Parrafo principal de esta pagina web (Default cancelar)");
 let usuarios = [];
 let contadorClicks = 0;
 let containerDatos = ["", "", ""];
@@ -26,14 +26,13 @@ function clickBtn() {
   contadorClicks = contadorClicks + 1;
   console.log(contadorClicks);
 }
+localStorage.setItem("users", JSON.stringify(usuarios));
 const btn = document.getElementById("btn");
 btn.onclick = clickBtn;
-
 if (typeof Storage !== "undefined") {
   console.log("LocalStorage Dispo");
 } else {
   console.log("LocalStorage no soportado");
 }
-
 localStorage.setItem("creador", "Sebastian Vargas");
 console.log(localStorage.getItem("creador"));
