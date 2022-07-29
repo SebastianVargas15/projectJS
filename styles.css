@@ -1,0 +1,88 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+  background-color: #005ad5;
+}
+
+#logo {
+  font-family: "Black Ops One", cursive;
+  font-size: 36px;
+  line-height: 45px;
+  line-height: 100%;
+  padding-left: 4rem;
+  color: white;
+  text-decoration: none;
+}
+
+header div {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  line-height: 100%;
+}
+
+header div a {
+  padding: 0rem 3rem;
+  text-decoration: none;
+  color: white;
+}
+#section-main {
+  display: flex;
+  width: 100%;
+  padding-top: 12rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #005ad5;
+  height: 100vh;
+}
+#container-two img {
+  width: 700px;
+}
+
+#container-one {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-top: 2rem;
+}
+#container-one h1 {
+  font-size: 53px;
+  line-height: 65px;
+  font-weight: bolder;
+  padding-bottom: 1.7rem;
+}
+#container-one p {
+  font-size: 17px;
+  line-height: 22px;
+  width: 38rem;
+  padding-bottom: 1.7rem;
+}
+
+#container-one button {
+  color: #005ad5;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 18px;
+  background-color: white;
+  border: none;
+  width: 124px;
+  height: 54px;
+  border-radius: 10px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+
+#container-one button:hover:active {
+  cursor: pointer;
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
