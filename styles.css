@@ -1,3 +1,7 @@
+:root{
+  --primary-color:#005ad5;
+  --secondary-color: #ffffff;
+}
 * {
   margin: 0%;
   padding: 0%;
@@ -9,7 +13,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0rem;
-  background-color: #005ad5;
+  background-color: var(--primary-color);
 }
 
 #logo {
@@ -18,7 +22,7 @@ header {
   line-height: 45px;
   line-height: 100%;
   padding-left: 4rem;
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -32,7 +36,7 @@ header div {
 header div a {
   padding: 0rem 3rem;
   text-decoration: none;
-  color: white;
+  color: var(--secondary-color);
 }
 #section-main {
   display: flex;
@@ -40,7 +44,7 @@ header div a {
   padding-top: 12rem;
   display: flex;
   justify-content: space-around;
-  background-color: #005ad5;
+  background-color: var(--primary-color);
   height: 100vh;
 }
 #container-two img {
@@ -48,7 +52,7 @@ header div a {
 }
 
 #container-one {
-  color: white;
+  color: var(--secondary-color);
   font-family: "Poppins", sans-serif;
   padding-top: 2rem;
 }
@@ -66,11 +70,11 @@ header div a {
 }
 
 #container-one button {
-  color: #005ad5;
+  color: var(--primary-color);
   font-weight: 500;
   line-height: 24px;
   font-size: 18px;
-  background-color: white;
+  background-color: var(--secondary-color);
   border: none;
   width: 124px;
   height: 54px;

@@ -1,6 +1,10 @@
+
+Swal.fire('BIENVENIDO A TU LANDING PAGE')
+
 let nombre = prompt("Elija el nombre de esta pagina web (Default cancelar)");
 let titulo = prompt("Elija el titulo de esta pagina web (Default cancelar)");
 let parraph = prompt("Parrafo principal de esta pagina web (Default cancelar)");
+
 let usuarios = [];
 let contadorClicks = 0;
 let containerDatos = ["", "", ""];
@@ -36,3 +40,9 @@ if (typeof Storage !== "undefined") {
 }
 localStorage.setItem("creador", "Sebastian Vargas");
 console.log(localStorage.getItem("creador"));
+
+
+
+// codigo que cambie de color la web document.documentElement.style.setproperty('--nombreVariable', 'valor');
+// que sea con botones
+// form de registro y capturar datos y agregarlos al array y al local storage
