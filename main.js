@@ -1,5 +1,4 @@
-
-Swal.fire('BIENVENIDO A TU LANDING PAGE')
+Swal.fire("BIENVENIDO A TU LANDING PAGE");
 
 let nombre = prompt("Elija el nombre de esta pagina web (Default cancelar)");
 let titulo = prompt("Elija el titulo de esta pagina web (Default cancelar)");
@@ -30,6 +29,10 @@ function clickBtn() {
   contadorClicks = contadorClicks + 1;
   console.log(contadorClicks);
 }
+function loaddata() {
+  let users = JSON.parse(localStorage.getItem("users"));
+  users.forEach((element) => console.log(element));
+}
 localStorage.setItem("users", JSON.stringify(usuarios));
 const btn = document.getElementById("btn");
 btn.onclick = clickBtn;
@@ -40,9 +43,4 @@ if (typeof Storage !== "undefined") {
 }
 localStorage.setItem("creador", "Sebastian Vargas");
 console.log(localStorage.getItem("creador"));
-
-
-
-// codigo que cambie de color la web document.documentElement.style.setproperty('--nombreVariable', 'valor');
-// que sea con botones
-// form de registro y capturar datos y agregarlos al array y al local storage
+loaddata();
