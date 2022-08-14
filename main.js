@@ -44,3 +44,21 @@ if (typeof Storage !== "undefined") {
 localStorage.setItem("creador", "Sebastian Vargas");
 console.log(localStorage.getItem("creador"));
 loaddata();
+
+fetchedData = fetch("https://jsonplaceholder.typicode.com/users")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    data.forEach((element) => {
+      console.log(element.name);
+    });
+  });
+
+ajax = new XMLHttpRequest();
+ajax.open("GET", "https://jsonplaceholder.typicode.com/users");
+ajax.send();
+ajax.onreadystatechange = function () {
+  if (ajax.readyState == 4 && ajax.status == 200) {
+    console.log(ajax.responseText);
+  }
+};
