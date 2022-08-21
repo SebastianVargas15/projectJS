@@ -29,24 +29,51 @@
       </div>
     </header>
     <main>
-      <section id="section-main">
-        <div id="container-one">
-          <h1 id="titulo">Lorem ipsum dolor sit</h1>
-          <p id="parrafo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-            commodi nam quia provident dolores corrupti, distinctio esse
-            eligendi consectetur, eaque veritatis voluptatibus sapiente, impedit
-            explicabo! Id ab cupiditate aliquam unde!
-          </p>
-          <button id="btn">Explore</button>
+      <section>
+        <div id="section-div">
+          <div id="container-one">
+            <h1 id="titulo">Lorem ipsum dolor sit</h1>
+            <p id="parrafo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              commodi nam quia provident dolores corrupti, distinctio esse
+              eligendi consectetur, eaque veritatis voluptatibus sapiente,
+              impedit explicabo! Id ab cupiditate aliquam unde!
+            </p>
+            <button btn="btn">Explore</button>
+          </div>
+          <div id="container-two">
+            <img src="assets/img/undraw_House_searching_re_stk8 1.png" alt="" />
+          </div>
         </div>
-        <div id="container-two">
-          <img src="assets/img/undraw_House_searching_re_stk8 1.png" alt="" />
+      </section>
+      <section id="sectiontwo">
+        <div class="container-sectiontwo-one">
+          <form>
+            <label for="username">Username</label>
+            <input type="text" placeholder="your username here" required />
+
+            <label for="nombre">Name</label>
+            <input type="text" placeholder="your name here" required />
+
+            <label for="email">Last Name</label>
+            <input type="text" placeholder="your last name here" required />
+
+            <label for="email">email</label>
+            <input type="email" placeholder="your email here" required />
+            <div class="container-div-btns">
+              <input type="submit" value="send" />
+              <input type="reset" value="reset" />
+            </div>
+          </form>
+        </div>
+
+        <div class="container-sectiontwo-two">
+          <p>Found for a user</p>
+          <button>Search</button>
+          <p class="container-sectiontwo-two-p">No user found</p>
         </div>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script src="main.js"></script>
   </body>
 </html>

@@ -62,3 +62,5 @@ ajax.onreadystatechange = function () {
     console.log(ajax.responseText);
   }
 };
+
+
