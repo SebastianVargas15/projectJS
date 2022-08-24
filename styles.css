@@ -48,13 +48,21 @@ header div a {
 #section-div {
   display: flex;
   width: 100%;
+  height: 100vh;
   padding-top: 12rem;
   justify-content: space-around;
 }
 
-#container-two img {
+#container-two{
   width: 700px;
   height: 700px;
+}
+
+#container-two img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
 }
 
 #container-one {
@@ -101,6 +109,12 @@ header div a {
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
+#sectiontwo {
+  padding-top: 1rem;
+  display: flex;
+border-top: #ffffff 1px solid;
+}
+
 
 #container-two {
   display: flex;
@@ -113,13 +127,7 @@ header div a {
   height: 100%;
 }
 
-#sectiontwo {
-  padding-top: 1rem;
-}
 
-#sectiontwo {
-  display: flex;
-}
 
 .container-sectiontwo-one {
   width: 50%;
@@ -188,4 +196,27 @@ form>input {
   line-height: 24px;
   color: var(--secondary-color);
   padding-top: 1rem;
+}
+
+
+.container-sectiontwo-two button{
+  margin-top: 1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  border: none;
+  width: 124px;
+  height: 54px;
+  border-radius: 10px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+.container-sectiontwo-two button:hover:active{
+  cursor: pointer;
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }

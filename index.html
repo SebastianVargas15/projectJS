@@ -46,22 +46,26 @@
           </div>
         </div>
       </section>
+      
       <section id="sectiontwo">
         <div class="container-sectiontwo-one">
-          <form>
+          <form name="form" id="form">
             <label for="username">Username</label>
-            <input type="text" placeholder="your username here" required />
+            <input type="text" placeholder="your username here" id="username" required />
+
+            <label for="username">Password</label>
+            <input type="text" placeholder="your password here" id="password" required />
 
             <label for="nombre">Name</label>
-            <input type="text" placeholder="your name here" required />
+            <input type="text" placeholder="your name here" id="name" required />
 
-            <label for="email">Last Name</label>
-            <input type="text" placeholder="your last name here" required />
+            <label for="lastname">Last Name</label>
+            <input type="text" placeholder="your last name here" id="lastname" required />
 
             <label for="email">email</label>
-            <input type="email" placeholder="your email here" required />
+            <input type="email" placeholder="your email here" id="email" required />
             <div class="container-div-btns">
-              <input type="submit" value="send" />
+              <input type="submit" value="send" id="btnsubmit" />
               <input type="reset" value="reset" />
             </div>
           </form>
@@ -69,11 +73,12 @@
 
         <div class="container-sectiontwo-two">
           <p>Found for a user</p>
-          <button>Search</button>
-          <p class="container-sectiontwo-two-p">No user found</p>
+          <button id="btnsearch">Search</button>
+          <p class="container-sectiontwo-two-p" id="puserfound">No user found</p>
         </div>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
   </body>
 </html>
