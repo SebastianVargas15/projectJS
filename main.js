@@ -84,3 +84,34 @@ const fetchUsers = async () => {
   const data = await res.json();
   return data;
 }
+
+function searchUser() {
+  let user = document.getElementById("input-search").value;
+  let userExist = false;
+  usuarios.forEach((element) => {
+    if (element.user == user) {
+      userExist = true;
+    }
+  }
+  );
+  if (userExist) {
+    let pUserFound = document.getElementById("puserfound");
+    pUserFound.innerHTML = "Usuario encontrado";
+    Swal.fire({
+      icon: "success",
+      title: "Hola!",
+      text: "Este usuario existe",
+    });
+  } else {
+    let pUserFound = document.getElementById("puserfound");
+    pUserFound.innerHTML = "Usuario no encontrado";
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "El usuario no existe!",
+    });
+  }
+}
+
+const searchSubmit = document.getElementById("btnsearch");
+searchSubmit.addEventListener("click", searchUser);
