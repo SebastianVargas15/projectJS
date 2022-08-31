@@ -71,6 +71,7 @@ header div a {
   color: var(--secondary-color);
   font-family: "Poppins", sans-serif;
   padding-top: 2rem;
+  align-items: center;
 }
 
 #container-one h1 {
@@ -219,4 +220,23 @@ form>input {
   cursor: pointer;
   transform: scale(0.98);
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#registrotitle{
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--secondary-color);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#input-search{
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  outline: none;
+  transition: 0.2s all;
 }

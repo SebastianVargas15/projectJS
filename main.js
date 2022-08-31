@@ -69,7 +69,6 @@ const regSubmit = document.getElementById("btnsubmit");
 regSubmit.addEventListener("click", registrarse);
 console.log(usuarios);
 
- // use promise to wait for html to load
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log("DOM fully loaded and parsed");
   let myusuarios = localStorage.getItem("myusuarios");
@@ -77,14 +76,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   console.log(usuarios);
 }
 );
-
-// fetch para mostrar nombres de usuarios
-const fetchUsers = async () => {
-  const res = await fetch("http://localhost:3000/users");
-  const data = await res.json();
-  return data;
-}
-
 function searchUser() {
   let user = document.getElementById("input-search").value;
   let userExist = false;
@@ -112,6 +103,18 @@ function searchUser() {
     });
   }
 }
-
 const searchSubmit = document.getElementById("btnsearch");
 searchSubmit.addEventListener("click", searchUser);
+
+
+
+
+let url = "https://jsonplaceholder.typicode.com/users";
+fetch(url)
+  .then((response) => response.json())
+  .then(data => mostrarData(data))
+  .catch(error => console.log(error));
+
+  const mostrarData = (data) => {
+    
+  }
